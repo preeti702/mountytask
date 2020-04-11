@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity">
+
+        <include android:id="@+id/toolbar"
+            layout="@layout/layout_toolbar"/>
+
+
+        <TextView
+            android:id="@+id/tvUpcomingMovies"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_15sdp"
+            android:text="Upcoming movies :"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUpcomingMovies"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_below="@id/tvUpcomingMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/tvTopRatedMovies"
+            android:layout_below="@id/rvUpcomingMovies"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_15sdp"
+            android:text="Top rated movies :"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTopMovies"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_below="@id/tvTopRatedMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MovieDetail">
+
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/layout_toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgBanner"
+                android:layout_margin="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"/>
+
+            <TextView
+                android:text="Tilte : "
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_below="@id/imgBanner"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/tvTitleCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_toEndOf="@id/tvTitleCaption"
+                android:text="Tilte"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_below="@id/imgBanner"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:text="Rating : "
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_below="@id/tvTitleCaption"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/tvRatingCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_toEndOf="@id/tvRatingCaption"
+                android:text="Tilte"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_below="@id/tvTitleCaption"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:text="Language : "
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_below="@id/tvRatingCaption"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/tvlngCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_toEndOf="@id/tvlngCaption"
+                android:text="Tilte"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_below="@id/tvRatingCaption"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/tvLng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:text="Overview : "
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_below="@id/tvlngCaption"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/tvoverviewCaption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:layout_toEndOf="@id/tvoverviewCaption"
+                android:text="Tilte"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_below="@id/tvlngCaption"
+                android:textSize="@dimen/_15sdp"
+                android:id="@+id/tvOverview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
+</layout>
